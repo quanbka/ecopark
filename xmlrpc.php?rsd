@@ -2,13 +2,13 @@
 	<service>
 		<engineName>WordPress</engineName>
 		<engineLink>https://wordpress.org/</engineLink>
-		<homePageLink>https://ecoparkcityland.com</homePageLink>
+		<homePageLink>https://ecopark.test</homePageLink>
 		<apis>
-			<api name="WordPress" blogID="1" preferred="true" apiLink="https://ecoparkcityland.com/xmlrpc.php" />
-			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://ecoparkcityland.com/xmlrpc.php" />
-			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://ecoparkcityland.com/xmlrpc.php" />
-			<api name="Blogger" blogID="1" preferred="false" apiLink="https://ecoparkcityland.com/xmlrpc.php" />
-				<api name="WP-API" blogID="1" preferred="false" apiLink="https://ecoparkcityland.com/wp-json/" />
+			<api name="WordPress" blogID="1" preferred="true" apiLink="https://ecopark.test/xmlrpc.php" />
+			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://ecopark.test/xmlrpc.php" />
+			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://ecopark.test/xmlrpc.php" />
+			<api name="Blogger" blogID="1" preferred="false" apiLink="https://ecopark.test/xmlrpc.php" />
+				<api name="WP-API" blogID="1" preferred="false" apiLink="https://ecopark.test/wp-json/" />
 			</apis>
 	</service>
 </rsd>
