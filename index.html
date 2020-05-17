@@ -114,7 +114,7 @@ function gtag_report_conversion(url) {
 
 
 
-<body data-rsssl=1 id="top" class="home page-template-default page page-id-2535  rtl_columns stretched arial-websave arial" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
+<body data-rsssl=1 id="top" class="home page-template-default page page-id-2535  rtl_columns stretched arial-websave arial" itemscope="itemscope" itemtype="https://schema.org/WebPage" ng-app="myApp" ng-controller="myCtrl">
 
 	<div class='av-siteloader-wrap av-transition-enabled av-transition-with-logo'><div class='av-siteloader-inner'><div class='av-siteloader-cell'><img class='av-preloading-logo' src='https://ecoparkskyoasis.site/wp-content/uploads/2020/04/logo-Ecopark.png' alt='Loading' title='Loading' /><div class='av-siteloader'><div class='av-siteloader-extra'></div></div></div></div></div>
 	<div id='wrap_all'>
@@ -175,10 +175,10 @@ function gtag_report_conversion(url) {
 <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1435-p2535-o2" />
 <input type="hidden" name="_wpcf7_container_post" value="2535" />
 </div>
-<p><span class="wpcf7-form-control-wrap ho-ten"><input type="text" name="ho-ten" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nhập họ tên:" /></span></p>
-<p><span class="wpcf7-form-control-wrap so-dien-thoai"><input type="tel" name="so-dien-thoai" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Nhập số điện thoại:" /></span></p>
-<p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Địa chỉ Email:" /></span></p>
-<p><input type="submit" value="GỬI ĐI" class="wpcf7-form-control wpcf7-submit" /></p>
+<p><span class="wpcf7-form-control-wrap ho-ten"><input type="text" name="ho-ten" ng-model="contact.name"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nhập họ tên:" /></span></p>
+<p><span class="wpcf7-form-control-wrap so-dien-thoai"><input type="tel" name="so-dien-thoai" ng-model="contact.phone"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Nhập số điện thoại:" /></span></p>
+<p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" ng-model="contact.email"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Địa chỉ Email:" /></span></p>
+<p><input type="submit" value="GỬI ĐI" ng-click="send()"  class="wpcf7-form-control wpcf7-submit" /></p>
 <input type='hidden' class='wpcf7-pum' value='{"closepopup":false,"closedelay":0,"openpopup":false,"openpopup_id":0}' /><div class="wpcf7-response-output wpcf7-display-none"></div></form></div> </div></section></div><div class="flex_column av_one_third  flex_column_div   avia-builder-el-9  el_after_av_one_third  avia-builder-el-last   " style='margin-top:20px; margin-bottom:20px; padding:30px 0px 30px 0px ; border-radius:0px; '><section class="av_textblock_section "  itemscope="itemscope" itemtype="https://schema.org/CreativeWork" ><div class='avia_textblock  av_inherit_color '  style='color:#ffffff; '  itemprop="text" ><h4 style="text-align: center;"><span style="color: #ffc164;"><strong>CHÍNH SÁCH CHIẾT KHẤU</strong></span></h4>
 <p><span style="color: #ffc164;"><strong>★ Không vay nghân hàng:</strong></span> Khách hàng không sử dụng chính sách vay nghân hàng được chiết khấu 2%GTCH.</p>
 <p><span style="color: #ffc164;"><strong>★ Thanh toán sớm 95%GTCH:</strong></span> Khách hàng thanh toán sớm 95% GTCH được chiết khấu lên đến 11% GTCH.</p>
@@ -382,10 +382,10 @@ function gtag_report_conversion(url) {
 <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1435-p2535-o3" />
 <input type="hidden" name="_wpcf7_container_post" value="2535" />
 </div>
-<p><span class="wpcf7-form-control-wrap ho-ten"><input type="text" name="ho-ten" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nhập họ tên:" /></span></p>
-<p><span class="wpcf7-form-control-wrap so-dien-thoai"><input type="tel" name="so-dien-thoai" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Nhập số điện thoại:" /></span></p>
-<p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Địa chỉ Email:" /></span></p>
-<p><input type="submit" value="GỬI ĐI" class="wpcf7-form-control wpcf7-submit" /></p>
+<p><span class="wpcf7-form-control-wrap ho-ten"><input type="text" name="ho-ten" ng-model="contact.name"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nhập họ tên:" /></span></p>
+<p><span class="wpcf7-form-control-wrap so-dien-thoai"><input type="tel" name="so-dien-thoai" ng-model="contact.phone"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Nhập số điện thoại:" /></span></p>
+<p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" ng-model="contact.email"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Địa chỉ Email:" /></span></p>
+<p><input type="submit" value="GỬI ĐI" ng-click="send()"  class="wpcf7-form-control wpcf7-submit" /></p>
 <input type='hidden' class='wpcf7-pum' value='{"closepopup":false,"closedelay":0,"openpopup":false,"openpopup_id":0}' /><div class="wpcf7-response-output wpcf7-display-none"></div></form></div> </div></section></div><div class="flex_column av_one_third  flex_column_div   avia-builder-el-104  el_after_av_one_third  avia-builder-el-last   " style='margin-top:20px; margin-bottom:20px; padding:30px 0px 30px 0px ; border-radius:0px; '><section class="av_textblock_section "  itemscope="itemscope" itemtype="https://schema.org/CreativeWork" ><div class='avia_textblock  av_inherit_color '  style='color:#ffffff; '  itemprop="text" ><h4 style="text-align: center;"><span style="color: #ffc164;"><strong>CHÍNH SÁCH CHIẾT KHẤU</strong></span></h4>
 <p><span style="color: #ffc164;"><strong>★ Không vay nghân hàng:</strong></span> Khách hàng không sử dụng chính sách vay nghân hàng được chiết khấu 2%GTCH.</p>
 <p><span style="color: #ffc164;"><strong>★ Thanh toán sớm 95%GTCH:</strong></span> Khách hàng thanh toán sớm 95% GTCH được chiết khấu lên đến 11% GTCH.</p>
@@ -408,10 +408,10 @@ function gtag_report_conversion(url) {
 <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1435-p2535-o4" />
 <input type="hidden" name="_wpcf7_container_post" value="2535" />
 </div>
-<p><span class="wpcf7-form-control-wrap ho-ten"><input type="text" name="ho-ten" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nhập họ tên:" /></span></p>
-<p><span class="wpcf7-form-control-wrap so-dien-thoai"><input type="tel" name="so-dien-thoai" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Nhập số điện thoại:" /></span></p>
-<p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Địa chỉ Email:" /></span></p>
-<p><input type="submit" value="GỬI ĐI" class="wpcf7-form-control wpcf7-submit" /></p>
+<p><span class="wpcf7-form-control-wrap ho-ten"><input type="text" name="ho-ten" ng-model="contact.name"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nhập họ tên:" /></span></p>
+<p><span class="wpcf7-form-control-wrap so-dien-thoai"><input type="tel" name="so-dien-thoai" ng-model="contact.phone"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Nhập số điện thoại:" /></span></p>
+<p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" ng-model="contact.email"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Địa chỉ Email:" /></span></p>
+<p><input type="submit" value="GỬI ĐI" ng-click="send()"  class="wpcf7-form-control wpcf7-submit" /></p>
 <input type='hidden' class='wpcf7-pum' value='{"closepopup":false,"closedelay":0,"openpopup":false,"openpopup_id":0}' /><div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
 </div>
 		<span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_third  el_after_av_one_third  el_before_av_one_third '><section id="text-5" class="widget clearfix widget_text"><h3 class="widgettitle">THÔNG TIN LIÊN HỆ</h3>			<div class="textwidget"><p><strong>❖ Địa chỉ: </strong>Sàn GD BĐS Ecopark, KĐT Ecopark, Văn Giang, Hưng Yên.</p>
@@ -481,10 +481,10 @@ function gtag_report_conversion(url) {
 <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1435-o1" />
 <input type="hidden" name="_wpcf7_container_post" value="0" />
 </div>
-<p><span class="wpcf7-form-control-wrap ho-ten"><input type="text" name="ho-ten" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nhập họ tên:" /></span></p>
-<p><span class="wpcf7-form-control-wrap so-dien-thoai"><input type="tel" name="so-dien-thoai" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Nhập số điện thoại:" /></span></p>
-<p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Địa chỉ Email:" /></span></p>
-<p><input type="submit" value="GỬI ĐI" class="wpcf7-form-control wpcf7-submit" /></p>
+<p><span class="wpcf7-form-control-wrap ho-ten"><input type="text" name="ho-ten" ng-model="contact.name"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nhập họ tên:" /></span></p>
+<p><span class="wpcf7-form-control-wrap so-dien-thoai"><input type="tel" name="so-dien-thoai" ng-model="contact.phone"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Nhập số điện thoại:" /></span></p>
+<p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" ng-model="contact.email"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Địa chỉ Email:" /></span></p>
+<p><input type="submit" value="GỬI ĐI" ng-click="send()"  class="wpcf7-form-control wpcf7-submit" /></p>
 <input type='hidden' class='wpcf7-pum' value='{"closepopup":false,"closedelay":0,"openpopup":false,"openpopup_id":0}' /><div class="wpcf7-response-output wpcf7-display-none"></div></form></div></p>
 <p style="text-align: center; font-size: 12px;">*Cam kết bảo mật mọi thông tin cá nhân khách hàng*</p>
 		</div>
@@ -578,6 +578,42 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <script src="js/sendmail.js"></script>
+{{ myWelcome }}
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js" charset="utf-8"></script>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+	$scope.contact = {};
+
+	$scope.send = function () {
+		alert("Cảm ơn quý khách đã liên hệ");
+		$http({
+		  method: 'POST',
+		  url: 'https://email.tinker.vn/send-email?mailTo=quanbka.cntt@gmail.com',
+		  data: $scope.contact,
+		}).then(function successCallback(response) {
+		  }, function errorCallback(response) {
+		  });
+
+		$http({
+		  method: 'POST',
+		  url: 'https://email.tinker.vn/send-email?mailTo=Ngocloannguyen28@gmail.com',
+		  data: $scope.contact,
+		}).then(function successCallback(response) {
+		  }, function errorCallback(response) {
+		  });
+
+		$http({
+		  method: 'POST',
+		  url: 'https://email.tinker.vn/send-email?mailTo=Thuhoivon@gmail.Com',
+		  data: $scope.contact,
+		}).then(function successCallback(response) {
+		  }, function errorCallback(response) {
+		  });
+	}
+});
+</script>
 <!--End of Tawk.to Script-->
 </body>
 </html>
