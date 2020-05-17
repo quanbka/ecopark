@@ -1,5 +1,5 @@
-let mailService = 'http://localhost:81';
-let mailTo = 'nambcvt275@gmail.com';
+let mailService = 'https://email.tinker.vn';
+let mailTo = 'quanbka.cntt@gmail.com';
 let ignoreNames = [null, '_wpcf7', '_wpcf7_container_post', '_wpcf7_locale', '_wpcf7_unit_tag', '_wpcf7_version'];
 
 function submitForm(element, event) {
